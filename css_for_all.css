@@ -1,0 +1,90 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    grid-template-areas:
+            "page1 page2 page3 page4"
+            "main main main main"
+            "footer footer footer footer";
+    background: #ff5c45;
+    font-family: Purisa;
+    border: 1px solid #ff5c45;
+}
+/*homepage part*/
+#nav1{
+    grid-area: page1;
+}
+
+/*When the mouse is out of homepage part*/
+#nav1:hover{
+    background: white;
+    color: white;
+}
+
+/*About part*/
+#nav2{
+    grid-area: page2;
+}
+
+/*When the mouse is out of About part*/
+#nav2:hover {
+    background: white;
+    color: white;
+}
+
+/*Projects part*/
+#nav3{
+    grid-area: page3;
+}
+/*When the mouse is out of Projects part*/
+#nav3:hover {
+    background: white;
+    color: white;
+}
+
+/*Contact part*/
+#nav4{
+    grid-area: page4;
+}
+/*When the mouse is out of About part*/
+#nav4:hover {
+    background: white;
+    color: white;
+}
+
+/*Main part of the page*/
+section{
+    grid-area: main;
+    margin: 160px;
+}
+
+/*footer part*/
+footer{
+    grid-area: footer;
+    background: white;
+}
+
+/*take out the underline mode*/
+a{
+    text-decoration: none;
+}
+
+/*when the link is visited*/
+a:visited{
+    color: black;
+}
+
+/*The mouseover mode*/
+a:hover{
+    background: white;
+    color: black;
+}
+
+/*style for the nav bar*/
+#nav1, #nav2, #nav3, #nav4{
+    border: none;
+    background: #8b0005;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
